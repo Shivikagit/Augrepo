@@ -1,0 +1,16 @@
+pipeline {
+       agent {label 'Master'}
+       stages {
+            stage ("SCM Checkout") {
+            steps {
+            
+                  }
+                }
+            stage ("Java execute") {
+                steps {
+                    sh 'javac *.java'
+                    sh 'java Simple'
+                      }
+                }
+               }
+            }
